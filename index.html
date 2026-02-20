@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Open</title>
+  <meta name="description" content="Open source tools for opportunity and education">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔓</text></svg>">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #0066cc;
+      --border: #e5e5e5;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s;
+    }
+
+    .project:hover {
+      border-color: var(--accent);
+    }
+
+    .project h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      transition: color 0.15s;
+    }
+
+    .links a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Building Open</h1>
+    <p class="tagline">Open source tools for opportunity and education</p>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <a href="https://github.com/buildingopen/opendraft" class="project">
+          <h3>OpenDraft</h3>
+          <p>AI-powered writing assistant</p>
+        </a>
+        <a href="https://github.com/buildingopen/openpaper" class="project">
+          <h3>OpenPaper</h3>
+          <p>Research paper tools</p>
+        </a>
+        <a href="https://github.com/buildingopen/openchat" class="project">
+          <h3>OpenChat</h3>
+          <p>Claude Code for everyone</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Connect</h2>
+      <div class="links">
+        <a href="https://github.com/buildingopen">GitHub</a>
+        <a href="mailto:hello@buildingopen.org">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Building Open
+  </footer>
+</body>
+</html>
